@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* you can add styles within one html file instead of a separate css file */
+      .parent {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .tips {
+        width: 80%;
+        background-color: #1a1a1a;
+      }
+      .tips p {
+        font-size: 2vw;
+        padding: 1%;
+        text-align: center;
+        line-height: 1.3;
+      }
+      .tips p:nth-child(even) {
+        background-color: #252525;
+      }
+      .keybind {
+        font-weight: bold;
+        color: #fff;
+        font-family: monospace;
+        background-color: #000000;
+        padding: 0.3% 1%;
+        border-radius: 0.5vw;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shortcuts</title>
+  </head>
+  <body>
+    <div class="topbar">
+      <a href="index.html">Back to Home</a>
+    </div>
+    <div class="parent">
+      <div class="tips">
+        <p>
+          While you have something highlighted, use
+          <span class="keybind">Shift + Alt + UpArrow / DownArrow</span> to copy
+          the selected text to next or previous line.
+        </p>
+        <p>
+          You can create a div with the class "test" by simply typing
+          <span class="keybind">div.test</span><br /><br />
+          You can also create a div with multiple classes by typing
+          <span class="keybind">div.test1.test2</span><br /><br />
+          Let's say you want to create a div with the class "test" and the id
+          "test", you can do that by typing
+          <span class="keybind">div.test#test</span><br /><br />
+          Or just a "p" with the id "placeholder" is
+          <span class="keybind">p#placeholder</span><br />
+        </p>
+        <p>
+          <span class="keybind">Ctrl + Enter</span> makes a new line regardless
+          of where the cursor is. This is useful when you want to add a new line
+          without breaking the current line.
+          <span class="keybind">Ctrl + Shift + Enter</span> makes a new line
+          above the current one.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

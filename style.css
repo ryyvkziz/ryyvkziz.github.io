@@ -1,5 +1,48 @@
 * {
+  /* the * is called a universal selector. it changes the default value for everything on the page. */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  color: #fff;
+}
+.topbar {
+  position: sticky; /* makes the topbar stick to the top of the page when you scroll down. */
+
+  top: 0; /* sets the top of the topbar to the top of the page. this is important for sticky positioning */
+
+  display: flex; /* sets display mode to flexbox */
+
+  justify-content: space-between; /* makes everything spaced evenly, with ones on the sides having no extra space */
+  /* try changing space between to space-around or space-evenly to see the difference */
+
+  align-items: center; /* centers the items vertically. doesnt do anything right now since the topbar is shaped around the <a> tags, */
+  /* but if you add a height to the topbar, it will center the items vertically within that height */
+
+  background-color: #1a1a1a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  font-weight: 800; /* big bold */
+
+  font-size: 2vw; /* 2vw = 2% of the viewport width. this means that the font size will change depending on the size of the screen */
+
+  filter: drop-shadow(
+    0 0 1vw #000000
+  ); /* adds a shadow under the topbar to make it stand out a bit */
+}
+.topbar a {
+  padding: 1% 2%; /* 1% top and bottom, 2% left and right */
+
+  text-decoration: none; /* removes the underline from the links */
+
+  color: #fff;
+
+  transition: 0.3s; /* makes the hover effect fade over X seconds. mess with the value to see how it works */
+}
+.topbar a:hover {
+  /* changes how to <a> tags look when they're hovered over. this is what the transition is for */
+  background-color: #dedede;
+  color: #000;
 }
